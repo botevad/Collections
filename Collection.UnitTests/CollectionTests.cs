@@ -1,3 +1,5 @@
+using System.Collections.ObjectModel;
+
 namespace Collection.UnitTests
 {
     public class CollectionTests
@@ -5,9 +7,13 @@ namespace Collection.UnitTests
 
 
         [Test]
-        public void Test1()
+        public void Test_Collection_EmptyConstructor()
         {
-            Assert.Pass();
+            //Arrange and Act
+            var coll = new Collection
+
+            //Assert
+            Assert.AreEqual(coll.ToString(), "[}");
         }
     }
 }
